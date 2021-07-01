@@ -9,8 +9,8 @@ def action(*add):
 
 
 # 定义为线程方法传入的参数
-my_tuple = ("http://c.biancheng.net/python/", \
-            "http://c.biancheng.net/shell/", \
+my_tuple = ("http://c.biancheng.net/python/",
+            "http://c.biancheng.net/shell/",
             "http://c.biancheng.net/java/")
 
 # 创建线程

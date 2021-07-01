@@ -11,6 +11,9 @@ def action(length):
 # 创建线程
 thread = threading.Thread(target=action, args=(20,))
 
+'''
+当程序中主线程及所有非守护线程执行结束时，未执行完毕的守护线程也会随之消亡（进行死亡状态），程序将结束运行。
+'''
 # 将thread设置为守护线程
 thread.daemon = True
 

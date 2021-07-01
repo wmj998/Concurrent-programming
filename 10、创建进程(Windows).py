@@ -13,8 +13,8 @@ def action(name, *add):
 
 if __name__ == '__main__':
     # 定义为进程方法传入的参数
-    my_tuple = ("http://c.biancheng.net/python/", \
-                "http://c.biancheng.net/shell/", \
+    my_tuple = ("http://c.biancheng.net/python/",
+                "http://c.biancheng.net/shell/",
                 "http://c.biancheng.net/java/")
     # 创建子进程，执行 action() 函数
     my_process = Process(target=action, args=("my_process进程", *my_tuple))

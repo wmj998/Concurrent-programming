@@ -23,11 +23,11 @@ future1 = pool.submit(action, 50)
 future2 = pool.submit(action, 100)
 
 # 判断future1代表的任务是否结束
-print(future1.done())
+print('future1', future1.done())
 time.sleep(3)
 
 # 判断future2代表的任务是否结束
-print(future2.done())
+print('future2', future2.done())
 
 # 查看future1代表的任务返回的结果
 print(future1.result())
@@ -98,7 +98,7 @@ print('--------------')
 #
 # # 创建一个包含4条线程的线程池
 # with ThreadPoolExecutor(max_workers=4) as pool:
-#     # 使用线程执行map计算
+#     # 使用线程执行map计算，map()方法的返回值将会收集每个线程任务的返回结果
 #     # 后面元组有3个元素，因此程序启动3条线程来执行action函数
 #     results = pool.map(action, (50, 100, 150))
 #     print('--------------')
