@@ -16,6 +16,7 @@ thread = threading.Thread(target=action, args=(20,))
 '''
 # 将thread设置为守护线程
 thread.daemon = True
+# thread = threading.Thread(target=action, args=(20,), daemon=True)
 
 # 启动线程
 thread.start()

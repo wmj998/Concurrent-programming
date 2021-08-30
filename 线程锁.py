@@ -21,11 +21,9 @@ def fun2():
 
 
 t1 = Thread(target=fun1)
-t1.start()
 t2 = Thread(target=fun2)
+t1.start()
 t2.start()
-
-
 t1.join()
 t2.join()
 

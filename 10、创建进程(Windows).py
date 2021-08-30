@@ -1,8 +1,8 @@
-from multiprocessing import Process
+from multiprocessing import Process, current_process
 import os
 
 print("当前进程ID：", os.getpid())
-
+# print("当前进程ID：", current_process().pid)
 
 # 定义一个函数，准备作为新进程的 target 参数
 def action(name, *add):
@@ -54,8 +54,8 @@ if __name__ == '__main__':
 #
 # if __name__ == '__main__':
 #     # 定义为进程方法传入的参数
-#     my_tuple = ("http://c.biancheng.net/python/", \
-#                 "http://c.biancheng.net/shell/", \
+#     my_tuple = ("http://c.biancheng.net/python/",
+#                 "http://c.biancheng.net/shell/",
 #                 "http://c.biancheng.net/java/")
 #     my_process = My_Process("my_process进程", *my_tuple)
 #     # 启动子进程
